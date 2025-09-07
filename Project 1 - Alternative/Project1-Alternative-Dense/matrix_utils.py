@@ -1,3 +1,5 @@
+### Imports
+#### External libraries
 import numpy as np
 
 

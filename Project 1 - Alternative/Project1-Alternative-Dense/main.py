@@ -1,4 +1,8 @@
+### Imports
+#### External libraries
 import numpy as np
+
+#### Custom libraries
 from jacobi import jacobi
 from gauss_seidel import gauss_seidel
 from gradient import gradient

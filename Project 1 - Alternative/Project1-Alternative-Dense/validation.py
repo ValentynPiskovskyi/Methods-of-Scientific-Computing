@@ -1,8 +1,14 @@
-from main import solve_all_methods
-import numpy as np
-from scipy.io import mmread
+### Imports
+#### External libraries
 import os
 import argparse
+import numpy as np
+from scipy.io import mmread
+
+#### Custom libraries
+from main import solve_all_methods
+
+
 
 def validate(data_path : str = "data"):
     '''
