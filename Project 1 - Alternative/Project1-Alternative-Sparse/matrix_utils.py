@@ -105,8 +105,8 @@ def check_symmetry(A : csr_array) -> bool:
 def check_pos_def(A : csr_array) -> bool:
     '''
     Check for matrix's positive definiteness by computing the smallest egienvalue.
-    An exception is raised in case the matrix is not positive definite (i.e. the 
-    decomposition cannot be performed).
+    A positive response is returned if the minimum eigenvalue is strictly greater 
+    than zero (1e-14).
 
     Note: The implementation of Cholesky decomposition with sparse matrices is not trivial, 
     due to the necessity of managing the fill-in problem.

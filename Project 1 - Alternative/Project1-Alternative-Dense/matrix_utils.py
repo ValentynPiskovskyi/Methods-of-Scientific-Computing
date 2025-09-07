@@ -52,8 +52,8 @@ def check_symmetry(A : np.ndarray) -> bool:
 def check_pos_def(A : np.ndarray) -> bool:
     '''
     Check for matrix's positive definiteness using Cholesky decomposition.
-    An exception is raised in case the matrix is not positive definite (i.e. the 
-    decomposition cannot be performed).
+    A positive response is returned if the Cholesky's decomposition is correctly 
+    performed. In case exceptions are raised, a negative response is returned.
     '''
 
     try: 
