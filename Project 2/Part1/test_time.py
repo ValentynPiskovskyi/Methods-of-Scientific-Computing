@@ -65,13 +65,13 @@ def run_test():
 
         # Custom (Alternative) implementation
         start = time.perf_counter()
-        dct2_alt(A)
+        #dct2_alt(A)
         sec = time.perf_counter()
         time_custom_alternative.append(sec - start)
 
         # Custom (Naive) implementation
         start = time.perf_counter()
-        dct2_naive(A)
+        #dct2_naive(A)
         sec = time.perf_counter()
         time_custom_naive.append(sec - start)
 
@@ -219,7 +219,7 @@ if __name__ == "__main__":
 
 
     create_plots(dimensions, time_lib, time_custom, time_custom_alternative)
-    create_plots_custom(dimensions, time_custom, time_custom_alternative, time_custom_naive)
+    #create_plots_custom(dimensions, time_custom, time_custom_alternative, time_custom_naive)
 
 
     import pickle
